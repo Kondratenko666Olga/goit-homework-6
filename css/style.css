@@ -267,14 +267,32 @@ header>.container {
 /*main-Values*/
 
 .main-values {
+    pad: 48px 48px;
+}
+
+/* Desktop devices */
+@media screen and (min-width: 1158px) {
+.main-values {
     flex-shrink: 0;
     padding: 120px 0 120px;
 }
+}
+
+
 
 .values-list {
     gap: 72px;
     width: 100%;
 }
+
+/* Tablet devices */
+@media screen and (min-width: 768px) {
+    .values-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 /* Desktop devices */
 @media screen and (min-width: 1158px) {
     .values-list {
@@ -294,7 +312,7 @@ header>.container {
 /* Desktop devices */
 @media screen and (min-width: 1158px) {
 .values-list-part{
-width: calc((100% - 72px)/4);
+width: calc((100% - 24px*3)/4);
 }
 }
 

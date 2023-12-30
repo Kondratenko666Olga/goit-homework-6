@@ -48,22 +48,18 @@ a {
     text-decoration: none;
     }
 
+
+
+
 ul {
     list-style-type: none;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 72px;
+    margin: 0;
+    padding-left: 0;
     }
 
-/* Desktop devices */
-@media screen and (min-width: 1158px) {
-    ul {
-        margin: 0;
-        padding-left: 0;
-        display: flex;
-    }
-}
 
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
@@ -276,12 +272,34 @@ header>.container {
 }
 
 .values-list {
-    gap: 24px;
+    gap: 72px;
+    width: 100%;
+}
+/* Desktop devices */
+@media screen and (min-width: 1158px) {
+    .values-list {
+        gap: 24px;
+    }
 }
 
+
+/* Tablet devices */
+@media screen and (min-width: 768px) {
+    .values-list-part {
+        width: calc((100% - 72px)/2);
+    }
+}
+
+
+/* Desktop devices */
+@media screen and (min-width: 1158px) {
 .values-list-part{
 width: calc((100% - 72px)/4);
 }
+}
+
+
+
 
 .visually-hidden {
     position: absolute;
@@ -303,7 +321,8 @@ width: calc((100% - 72px)/4);
 display: none;
 }
 
-@media screen and (min-width: 1440px) {
+/*Desktop devices*/
+@media screen and (min-width: 1158px) {
     .values-wrapper {
     text-align: center;
     padding: 24px 100px;

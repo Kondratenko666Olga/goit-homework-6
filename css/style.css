@@ -164,13 +164,13 @@ header>.container {
 }
 
 
-.nav-addres {
+.nav-address {
     font-style: normal;
     display: flex;
     align-items: center;
 }
 
-.nav-addres-list {
+.nav-address-list {
     color:#434455;
     font-size: 16px;
     font-style: normal;
@@ -181,7 +181,7 @@ header>.container {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-addres-list:hover,:focus {
+.nav-address-list:hover,:focus {
     color: #404bbf;
 }
 
@@ -214,42 +214,80 @@ header>.container {
 .main-effective {
     background-color: #2E2F42;
     flex-shrink: 0;
-    padding: 188px 0 188px;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    max-width: 1440px;
+    background-size: cover; 
     margin: 0 auto;
+    max-width: 320px;
+    padding: 72px 0 72px;
 }
+
+/* Tablet devices */
+@media only screen and (min-width: 768px) {
+    .main-effective {
+        padding: 112px 0 112px;
+        max-width: 768px;
+    }
+}
+
+/* Desktop devices */
+@media screen and (min-width: 1158px) {
+    .main-effective {
+        padding: 188px 0 188px;
+        max-width: 1440px;
+    }
+}
+
+
+
+
 
 .main-effective-header {
     color: #FFF;
     text-align: center;
-    /* Header 1 */
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px; /* 107.143% */
-    letter-spacing: 1.12px;
-    line-height: 1.07;
+    font-size: 36px;
 
-    max-width: 496px;
+    font-weight: 700;
+    line-height: 1.11em;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin-bottom: 72px;
+    max-width: 220px;
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 768px) {
+    .main-effective-header {
+        font-size: 56px;
+        margin-bottom: 36px;
+
+        line-height: 1.07;
+        max-width: 496px;
+
+        text-transform: none;
+  }
+}
+
+/* Desktop devices */
+@media screen and (min-width: 1158px) {
+    .main-effective-header {
+        margin-bottom: 48px;
+  }
 }
 
 .main-effective-button {
     background: #4D5AE5;
     color:#FFF;
-    /* Button Text */
+   
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px; 
     letter-spacing: 0.64px;
     cursor:pointer;
     font-family: "Roboto", sans-serif;
 
-    margin-top: 48px;
     padding: 16px 32px;
 
     min-width: 169px;    
@@ -267,7 +305,7 @@ header>.container {
 /*main-Values*/
 
 .main-values {
-    pad: 48px 48px;
+    padding: 96px 96px;
 }
 
 /* Desktop devices */
@@ -277,8 +315,6 @@ header>.container {
     padding: 120px 0 120px;
 }
 }
-
-
 
 .values-list {
     gap: 72px;
@@ -316,7 +352,18 @@ width: calc((100% - 24px*3)/4);
 }
 }
 
+.main-names {
+    font-size: 36px;
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+}
 
+/* Desktop devices */
+@media only screen and (min-width: 1158px) {
+    .main-names {
+        font-size: 20px;
+    }
+}
 
 
 .visually-hidden {
@@ -347,7 +394,7 @@ display: none;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     background: #F4F4FD;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     display: flex;
     align-items: center;
     justify-content: center; 

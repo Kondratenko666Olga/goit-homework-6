@@ -305,7 +305,7 @@ header>.container {
 /*main-Values*/
 
 .main-values {
-    padding: 96px 96px;
+    margin: 96px auto;
 }
 
 /* Desktop devices */

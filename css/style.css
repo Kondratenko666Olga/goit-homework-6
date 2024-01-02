@@ -416,7 +416,7 @@ display: none;
 .team {
     flex-shrink: 0;
     background-color: #F4F4FD;
-    padding: 96px 0 96px;
+    margin: 0 auto 96px;
 }
 
 /* Tablet devices */

@@ -110,11 +110,9 @@ h1,h2,h3,h4,h5,h6,p {
 
 .d-flex {
     display: flex;
+    align-items: center;
 } 
 
-.head-nav {
-    align-items: center;
-}
 
 
 header {
@@ -160,11 +158,38 @@ header>.container {
     color: #404bbf;
 }
 
-
-.d-flex>.logo {
-    margin-right: 76px;
-    padding: 24px 0 24px;
+.logo-color {
+    color: #2e2f42;
 }
+
+.logo {
+    margin-right: 76px;
+    padding: 16px 0 16px;
+
+    color: #4d5ae5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        padding: 24px 0 24px;
+    }  
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-menu {
+    flex-wrap: nowrap;
+  }
+}
+
+
 
 .nav-menu, .address-list{
     gap: 40px;
@@ -175,10 +200,15 @@ header>.container {
     display: none;
   }
 }
-
+           /*Head-menu*/
 .head-button {
     background-color: #fff;
     border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -190,8 +220,15 @@ header>.container {
 .nav-address {
     font-style: normal;
     display: flex;
-    align-items: center;
 }
+
+@media only screen and (max-width: 1157.98px) {
+    .address-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 
 .nav-address-list {
     color:#434455;
@@ -204,24 +241,23 @@ header>.container {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (max-width: 1157.98px) {
+    .nav-address-list {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17em;
+    letter-spacing: 0.48px;
+    padding: 0;
+    }
+}
+
 .nav-address-list:hover,:focus {
     color: #404bbf;
 }
 
-.logo-color {
-    color: #2e2f42;
-}
 
-.logo {
-    color: #4d5ae5;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-}
+
+
 
 
 

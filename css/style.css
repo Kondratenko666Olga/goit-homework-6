@@ -741,27 +741,60 @@ position: relative;
 .portfolio-collection:hover .overlai-text {
     transform: translateY(0);
 }
+
+
+
+
 /*footer*/
 
 footer {
-    background-color: #2E2F42;
-    padding-top: 101.5px;
-    padding: 100px 0 100px
+    background: #2E2F42;
+    padding: 96px 0;
 }
 
+@media only screen and (max-width: 767.98px) {
+    .footer {
+      text-align: center;
+    }
+  }
+
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+@media only screen and (min-width: 768px){
+    .footer-bottom {
+    flex-wrap: wrap;
+    gap: 72px 24px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199.98px){
+    .footer-bottom {
+        padding: 0 108px;
+    }
+}
+
+
+.bottom {
+    width: 264px;
+   /* margin-right: 120px;*/
+}
+
+
 .logo-footer {
-    color: #F4F4FD;
     justify-content: center;
-    font-family: "Raleway", sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 21px; /* 116.667% */
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     line-height: 1.17;
     color: #4d5ae5;
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px;
     }
 
@@ -771,37 +804,24 @@ footer {
 
 
 .footer-text {
-    width: 264px;
-    margin-top: 17.5px;
+    max-width: 288px;
     color: #F4F4FD;
-    /* Body */
-    font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
+    padding-bottom: 72px;
 }
 
-.footer-bottom {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.bottom {
-    width: 264px;
-    margin-right: 120px;
-}
 
 .footer-socials {
     width: 208px;
     font-weight: 500;
+    padding-bottom: 72px;
 }
 
 .footer-social {
     color: #FFF;
     display: block;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-socials>.reviews-items {
@@ -826,6 +846,83 @@ footer {
     background-color: #31D0AA;
 }
 
+
+/*Footer-form*/
+
+.footer-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+  }
+  .wrapper-caption {
+    color:#FFF;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: center;
+
+  }
+
+  .form-subscribe {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  
+  .subscribe-form-filed-input {
+    width: 264px;
+    height: 40px;
+    flex-shrink: 0;
+    outline: transparent;
+
+    padding: 8px 16px;
+    color: #FFFFFF;
+
+    border-radius: 4px;
+    border: 1px solid  #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color:transparent;
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    opacity: 0.6;
+  }
+
+  .subscribe-form-filed-input::placeholder {
+    color: #FFFFFF;
+    
+  }
+
+
+  .subscribe-form-btn {
+    text-align: center;
+    color: #FFFFFF;
+
+    font-weight: 500;
+    letter-spacing: 0.64px;
+
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: #4D5AE5;
+
+    border: none;
+    min-width: 165px;
+
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+  .subscribe-form-icon {
+    fill: #FFFFFF;
+    margin-left: 16px;
+  }
 
 
 /* Modal window */
@@ -1044,7 +1141,7 @@ footer {
   }
 
 
-  /*Form*/
+  /*Modal Form*/
 
   .form-wrapper {
     margin-bottom: 8px;
@@ -1138,76 +1235,4 @@ footer {
 
 
 
-  /*Footer-form*/
-
-  .footer-form {
-    margin-left: auto;    
-  }
-  .wrapper-caption {
-    color:#FFF;
-    font-weight: 500;
-    margin-bottom: 16px;
-
-  }
-
-  .form-subscribe {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .subscribe-form-filed{
-
-  }
-
-  .subscribe-form-filed-input {
-    width: 264px;
-    height: 40px;
-    flex-shrink: 0;
-    outline: transparent;
-
-    padding: 8px 16px;
-    color: #FFFFFF;
-
-    border-radius: 4px;
-    border: 1px solid  #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color:transparent;
-
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-  }
-
-  .subscribe-form-filed-input::placeholder {
-    color: #FFFFFF;
-    
-  }
-
-
-  .subscribe-form-btn {
-    text-align: center;
-    color: #FFFFFF;
-
-    font-weight: 500;
-    letter-spacing: 0.64px;
-
-    display: inline-flex;
-    padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    border-radius: 4px;
-    background: #4D5AE5;
-
-    border: none;
-    min-width: 165px;
-
-    line-height: 1.5;
-    cursor: pointer;
-  }
-
-  .subscribe-form-icon {
-    fill: #FFFFFF;
-    margin-left: 16px;
-  }
+  

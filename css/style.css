@@ -220,7 +220,6 @@ header>.container {
 }
 
 .nav-address {
-    font-style: normal;
     display: flex;
 }
 
@@ -231,6 +230,12 @@ header>.container {
     }
 }
 
+@media only screen and (min-width: 1158px) {
+    .address-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
 
 .nav-address-list {
     color:#434455;

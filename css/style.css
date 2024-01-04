@@ -44,6 +44,8 @@ body {
 
 img {
     display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 a {
@@ -369,7 +371,8 @@ pointer-events: none;
 .main-effective {
     background-color: #2E2F42;
     flex-shrink: 0;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office_mob@1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -378,11 +381,29 @@ pointer-events: none;
     padding: 72px 0 72px;
 }
 
+@media (min-resolution: 192dpi) {
+    .main-effective {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office_mob@2x.jpg);
+    }
+}
+
 /* Tablet devices */
+
 @media only screen and (min-width: 768px) {
     .main-effective {
         padding: 112px 0 112px;
         max-width: 768px;
+
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office_tab@1x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .main-effective {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office_tab@2x.jpg);
     }
 }
 
@@ -391,10 +412,18 @@ pointer-events: none;
     .main-effective {
         padding: 188px 0 188px;
         max-width: 1440px;
+
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office_desk@1x.jpg);
     }
 }
 
-
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .main-effective {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office_desk@2x.jpg);
+    }
+}
 
 
 
@@ -583,7 +612,6 @@ display: none;
 @media screen and (min-width: 1158px) {
     .team {
         padding: 120px 0 120px; 
-        max-width: 1158px;
     }
 }
 
